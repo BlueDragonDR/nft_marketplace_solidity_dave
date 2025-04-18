@@ -20,7 +20,7 @@ export default function CreatorDashboard () {
   useEffect(() => {
     loadNFTs()
   }, [account, isReady])
-
+//load
   async function loadNFTs () {
     if (!isReady || !hasWeb3) return <></>
     const myUniqueCreatedAndOwnedTokenIds = await getUniqueOwnedAndCreatedTokenIds(nftContract)
